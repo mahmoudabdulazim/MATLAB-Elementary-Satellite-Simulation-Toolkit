@@ -1,0 +1,7 @@
+function [Pairs] = pairSats(num)
+   for k = 1:num
+       for l = 1:num-k
+           Pairs(1,l)
+       end 
+   end
+end

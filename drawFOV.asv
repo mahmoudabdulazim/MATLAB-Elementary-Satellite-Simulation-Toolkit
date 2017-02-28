@@ -1,0 +1,6 @@
+function [FOV] = drawFOV(Satellite)
+   [x,y,z] = cylinder([1 0]);
+   FOV = surface(x*6380,y*6380,z*norm(Satellite.States.R));
+   rotate(FOV,[0 0 1],Satellite.States.Longitude,[0 0 0])
+   rotate(FOV,r
+end
